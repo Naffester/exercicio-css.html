@@ -1,101 +1,112 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-body body {
+body {
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
-    }
-
-body > header {
-    background-color: burlywood;
-    padding: 16px 0 ;
 }
 
-header .conteiner{
+header {
+    background-color: antiquewhite;
+    padding: 16px;
+}
+
+header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header li {
-    display: inline;
-    }
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li{
+    display: inline-block;
+}
 
 header li a {
     color: crimson;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     font-weight: bolder;
     text-decoration: none;
-    margin-left: 16px;
-}    
+    padding-left: 16px;
+}
 
-
-
-
-.conteiner {
-    width: 1366px;
-    margin: 0 auto;
-    
+.container {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0,auto;
 }
 
 .articles {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    flex: 1 1 45%;
+    margin-bottom: 16px;
 }
 
 .articles article img {
     height: 180px;
     
-    
+ 
 }
 
-.articles article {
-    width: 50%;
-    
-}
 
 h1 {
-   
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     color: crimson;
-    
+}
+
+section#entretenimento {
+    padding: 16px 0;
+    background-color: lightyellow;
+ 
     
 }
 
-section {
-    padding: 16px 0 ;
-    background-color: lightgrey;
-   
+section#tecnologia {
+    padding: 16px 0;
+    background-color: #fff3e0;
 }
+
 
 section h2 {
     margin-bottom: 16px;
-
 }
 
 h3 {
-
-
+    color: crimson;
 }
 
-input {
+input[type="button"] {
     padding: 2px;
     margin: 5px;
-    
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     font-size: 16px;
-    background-color: lightgray;
+    background-color:antiquewhite;
     color: crimson;
-    font-weight: bolder;
-}
+    font-weight: 700;
 
+}
 
 
 
